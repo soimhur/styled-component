@@ -263,20 +263,71 @@ const StoryCard = styled.div`
   background-color: #fff;
 
   > div {
-    padding: 3rem;
-    line-height: 1.5;
+    padding: 2rem;
+    line-height: 1.7;
+    font-size: 0.9rem;
+  }
+
+  @media (min-width: 1080px) {
+    > div {
+      padding: 3rem;
+      font-size: 1rem;
+    }
   }
 `;
 
 const CreatorCard = styled.div`
+  margin-top: .5rem;
   width: 100%;
-  height: 400px;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,.1);
   background-color: #fff;
+
+  @media (min-width: 1080px) {
+    margin-top: 0;
+  }
+`;
+const CreatorCardInner = styled.div`
+  padding: .2rem 2rem 1rem;
+  @media (min-width: 1080px) {
+    padding: .2rem 2rem 1rem;
+  }
+`;
+
+const CreatorProfile = styled.div`
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+`;
+const ProfileImage = styled.div`
+  background-image: url(https://tumblbug-upi.imgix.net/48d20b1046be5e42ce74e1b992fc886f3e342df3.png?ixlib=rb-1.1.0&w=200&h=250&auto=format%2Ccompress&fit=facearea&facepad=2.0&ch=Save-Data&mask=ellipse&s=2bdc40e93e414edcaa88f983015d7772);
+  background-position: 50% 38%;
+  border-radius: 50%;
+  background-size: cover;
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+`;
+const CreatorBiography = styled.div`
+  font-size: 0.9rem;
+  color: rgba(0,0,0,.8);
+  line-height: 1.7;
+  padding: 1.2rem 0;
+  border-bottom: 1px solid #efefef;
+`;
+const CreatorContactButton = styled.div`
+  color: #757575;
+  background-color: #f7f7f7;
+  padding: 10px 20px;
+  margin: 1rem 0 .5rem;
+  border-radius: 4px;
+  text-align: center;
+  font-weight: 700;
+  font-size: .9rem;
 `;
 const RewardCardWrapper = styled.div`
   margin-top: 1rem;
   width: 100%;
+  min-height: 800px;
 
   > span {
     color: #757575;
@@ -291,6 +342,22 @@ const RewardCard = styled.div`
   background-color: #fff;
 `;
 
+const FixedBottomPledgeButton = styled.div`
+  display: block;
+  width: 100%;
+  color: #fff;
+  padding: 20px 0;
+  background-color: #fa6462;
+  text-align: center;
+
+
+  position: fixed;
+  bottom: 0;
+
+  @media (min-width: 1080px) {
+    display: none;
+  }
+`;
 
 class App extends Component {
   render() {
@@ -359,6 +426,18 @@ class App extends Component {
               </ProjectContentsMainColumn>
               <ProjectContentsSubColumn>
                 <CreatorCard>
+                  <CreatorCardInner>
+                    <h5>창작자 소개</h5>
+                    <CreatorProfile>
+                      <ProfileImage />
+                      배성태 (GrimB)
+                    </CreatorProfile>
+                    <CreatorBiography>
+                      허술한 길고양이 집사 겸 찍사입니다. 우리의 이웃이지만 오래된 편견과 단단한 오해 속에서 참혹하게 살고 있는 이 땅의 길고양이의 삶을 제대로 알리기 위해 노력 중입니다. 길고양이 집사로써 그들의 삶을 기록하고 전시 하고 강의를 하고 있습니다.
+                    </CreatorBiography>
+                    <CreatorContactButton>창작자에게 문의하기
+                    </CreatorContactButton>
+                  </CreatorCardInner>
                 </CreatorCard>
                 <RewardCardWrapper>
                   <span>선택할 수 있는 12개의 선물이 있습니다</span>
@@ -370,6 +449,7 @@ class App extends Component {
             </ProjectContents>
           </Container>
         </ProjectContentsBackground>
+        <FixedBottomPledgeButton>프로젝트 밀어주기</FixedBottomPledgeButton>
       </div>
     );
   }
