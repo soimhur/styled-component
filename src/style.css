@@ -1,0 +1,71 @@
+.projectIntroduction {
+  background-color: #fff;
+  width: 100%;
+  border-bottom: 1px solid #efefef;
+  display: flex;
+}
+.projectOutline {
+  height: 220px;
+  display: flex;
+  align-items: center;
+  order: 2;
+  background-color: #efefef;
+}
+  @media (min-width: 1080px) {
+    .projectOutline {
+      order: 1;
+    }
+  }
+
+.projectOutlineInner {
+  text-align: left;
+  margin: 0;
+  padding: 0 1rem;
+}
+
+  @media (min-width: 1080px) {
+    .projectOutlineInner {
+      text-align: left;
+      margin: 0 auto;
+    }
+  }
+
+.category {
+  color: #757575;
+  font-size: 0.9em;
+}
+
+.projectTitle {
+  font-size: 2.5rem;
+  line-height: 1.5;
+  padding: 0.5rem 0 1rem;
+  margin: 0;
+}
+
+.creators {
+  position: relative;
+  display: inline-block;
+}
+.creatorProfileImage {
+  background-image: url(https://tumblbug-upi.imgix.net/48d20b1046be5e42ce74e1b992fc886f3e342df3.png?ixlib=rb-1.1.0&w=200&h=250&auto=format%2Ccompress&fit=facearea&facepad=2.0&ch=Save-Data&mask=ellipse&s=2bdc40e93e414edcaa88f983015d7772);
+  background-position: 50% 38%;
+  border-radius: 50%;
+  background-size: cover;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+  float: left;
+  margin-top: -2px;
+}
+
+.projectCoverImageWrapper { 
+  order:  1;
+  width:  100%;
+}
+
+@media (min-width: 1080px) {
+  .projectCoverImageWrapper {
+    order: 2;
+    width: 700px;
+  }
+}
