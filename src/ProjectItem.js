@@ -41,20 +41,20 @@ const ProjectItemWrapper = styled.a`
     }
 `;
 const ProjectCoverimage = styled.img`
-  min-width: 120px;
-  min-height: 90px;
-  max-height: 90px;
   margin-right: 1rem;
+  background-color: #757575;
+  width: 120px;
+  height: 90px;
 
   ${SmallMobileBreakPoint} {
-    min-width: 100px;
-    max-height: 75px;
+    width: 100px;
+    height: 75px;
   }
   ${DesktopBreakPoint} {
     margin-right: 0;
 
-    min-width: 256px;
-    max-height: 192px;
+    width: 256px;
+    height: 192px;
   }
 `;
 const ProjectTextWrapper = styled.div`
