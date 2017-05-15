@@ -11,26 +11,26 @@ const SmallMobileBreakPoint = `
 
 // ProjectItem
 const ProjectItemWrapper = styled.a`
+  cursor: pointer;
+
   display: flex;
   flex-direction: row;
   width: 100%;
+
   min-height: 105px;
-  height:auto !important;
-  height: 105px;
-  cursor: pointer;
+  height: auto;
+
   padding-bottom: .75rem;
   border-bottom: 1px solid rgba(0,0,0,.05);
 
   ${SmallMobileBreakPoint} {
     min-height: 90px;
-    height:auto !important;
-    height: 90px;
+    height: auto;
   }
   ${DesktopBreakPoint} {
     min-height: 300px;
-    height:auto !important;
-    height: 300px;
-    max-width: 256px;
+    height: auto;
+
     flex-direction: column;
     padding-bottom: 0;
     border-bottom: none;
@@ -52,6 +52,7 @@ const ProjectCoverimage = styled.img`
   }
   ${DesktopBreakPoint} {
     margin-right: 0;
+
     min-width: 256px;
     max-height: 192px;
   }
