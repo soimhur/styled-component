@@ -5,6 +5,11 @@ import Container from './Styled/Container';
 import ProjectItem from './ProjectItem';
 
 /* style */
+const Div = styled.div`
+  width: 100vw;
+  height: 100vh;
+`;
+
 const CarouselHeader = styled.div`
   margin: 0 -.75rem .5rem 0;
   display: flex;
@@ -35,10 +40,11 @@ const CarouselContents = styled.div`
 
   @media (min-width: 1080px) {
     flex-direction: row;
+    width: 100%;
   }
 `;
 const Column = styled.div`
-  flex: 1 0 25%;
+  flex: 1 0 20%;
   margin: .5rem;
 `;
 
@@ -46,31 +52,33 @@ const Column = styled.div`
 class FrontPage extends Component {
   render() {
     return (
-      <Container>
-        <CarouselHeader>
-          <CarouselTitle>
-            기획전
-          </CarouselTitle>
-          <CarouselButtons>
-            <Button iconTransparent> ❮ </Button>
-            <Button iconTransparent> ❯ </Button>
-          </CarouselButtons>
-        </CarouselHeader>
-        <CarouselContents>
-          <Column>
-            <ProjectItem />
-          </Column>
-          <Column>
-            <ProjectItem />
-          </Column>
-          <Column>
-            <ProjectItem />
-          </Column>
-          <Column>
-            <ProjectItem />
-          </Column>
-        </CarouselContents>
-      </Container>
+      <Div>
+        <Container>
+          <CarouselHeader>
+            <CarouselTitle>
+              기획전
+            </CarouselTitle>
+            <CarouselButtons>
+              <Button iconTransparent> ❮ </Button>
+              <Button iconTransparent> ❯ </Button>
+            </CarouselButtons>
+          </CarouselHeader>
+          <CarouselContents>
+            <Column>
+              <ProjectItem longTitle />
+            </Column>
+            <Column>
+              <ProjectItem longTitle />
+            </Column>
+            <Column>
+              <ProjectItem />
+            </Column>
+            <Column>
+              <ProjectItem />
+            </Column>
+          </CarouselContents>
+        </Container>
+      </Div>
     );
   }
 }
