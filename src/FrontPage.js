@@ -44,8 +44,12 @@ const CarouselContents = styled.div`
   }
 `;
 const Column = styled.div`
+  width: 100%;
+  margin: .5rem;
+
+  @media (min-width: 1080px) {
     flex: 1 0 20%;
-    margin: .5rem;
+  }
 `;
 
 
