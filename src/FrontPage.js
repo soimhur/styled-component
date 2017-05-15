@@ -44,8 +44,8 @@ const CarouselContents = styled.div`
   }
 `;
 const Column = styled.div`
-  flex: 1 0 20%;
-  margin: .5rem;
+    flex: 1 0 20%;
+    margin: .5rem;
 `;
 
 
