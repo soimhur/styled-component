@@ -10,6 +10,7 @@ const SiteHeaderMenu = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position: relative;
 `;
 const LeftMenu = styled.div`
   flex: 1 0 0;
@@ -17,7 +18,7 @@ const LeftMenu = styled.div`
   display: flex;
 `;
 const CenterMenu = styled.div`
-  flex: 0 0 0;
+  flex: 0 0 20%;
   padding: 0 1rem;
   cursor: pointer;
 
