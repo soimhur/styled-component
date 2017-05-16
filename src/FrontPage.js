@@ -4,6 +4,7 @@ import Button from './Styled/Button';
 import Container from './Styled/Container';
 import ProjectItem from './ProjectItem';
 import SiteHeader from './SiteHeader';
+import ModalHeader from './ModalHeader';
 
 /* style */
 const Div = styled.div`
@@ -64,6 +65,7 @@ class FrontPage extends Component {
   render() {
     return (
       <Div>
+        <ModalHeader title="프로젝트 둘러보기" />
         <SiteHeader />
         <Container>
           <Hero></Hero>

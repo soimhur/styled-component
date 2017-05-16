@@ -13,7 +13,7 @@ const SiteHeaderMenu = styled.div`
   position: relative;
 `;
 const LeftMenu = styled.div`
-  flex: 1 0 0;
+  flex: 1 0 25%;
   text-align: center;
   display: flex;
 `;
@@ -27,7 +27,7 @@ const CenterMenu = styled.div`
   }
 `;
 const RightMenu = styled.div`
-  flex: 1 0 0;
+  flex: 1 0 25%;
   text-align: right;
 `;
 
