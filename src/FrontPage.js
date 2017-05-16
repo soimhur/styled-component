@@ -3,6 +3,7 @@ import styled from 'styled-components';
 import Button from './Styled/Button';
 import Container from './Styled/Container';
 import ProjectItem from './ProjectItem';
+import SiteHeader from './SiteHeader';
 
 /* style */
 const Div = styled.div`
@@ -10,9 +11,14 @@ const Div = styled.div`
   height: 100vh;
   overflow-x: hidden;
 `;
+const Hero = styled.div`
+  background-color: #efefef;
+  height: 400px;
+  width: 100%;
+`;
 
 const CarouselHeader = styled.div`
-  margin: 0 -.75rem .5rem 0;
+  margin: 1rem -.75rem .5rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -58,7 +64,9 @@ class FrontPage extends Component {
   render() {
     return (
       <Div>
+        <SiteHeader />
         <Container>
+          <Hero></Hero>
           <CarouselHeader>
             <CarouselTitle>
               기획전
