@@ -18,13 +18,16 @@ const LeftMenu = styled.div`
   display: flex;
 `;
 const CenterMenu = styled.div`
+  width: 10rem;
   position: absolute;
   left: 0;
   right: 0;
-  width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
   cursor: pointer;
+
+  display: flex;
+  justify-content: center;
 
   &:hover > div {
     fill: #757575;
