@@ -18,12 +18,16 @@ const LeftMenu = styled.div`
   display: flex;
 `;
 const CenterMenu = styled.div`
-  flex: 0 0 0;
+  width: 70px;
+  margin: 0 auto;
   padding: 0 1rem;
   cursor: pointer;
 
   &:hover > div {
     fill: #757575;
+  }
+  @media(min-width: 1080px) {
+    width: 85px;
   }
 `;
 const RightMenu = styled.div`
