@@ -18,6 +18,9 @@ const LeftMenu = styled.div`
   display: flex;
 `;
 const CenterMenu = styled.div`
+  position: absolute;
+  left: 0;
+  right: 0;
   width: 100%;
   margin: 0 auto;
   padding: 0 1rem;
