@@ -88,7 +88,7 @@ const Button = styled.button`
   margin: 0 .25em 0 0;
 
   /* No radius style */
-  border-radius: ${props => props.noRadius ? '0' : '0.28571429rem'};
+  border-radius: ${props => props.noRadius ? '0' : '8px'};
 
   /* Font */
   text-transform: none;

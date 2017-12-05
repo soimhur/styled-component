@@ -1,9 +1,154 @@
-body {
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+
+/* Typography */
+html, body {
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
   box-sizing: border-box;
   word-break: keep-all;
   word-wrap: break-word;
+  overflow-x: hidden;
+  font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+  -webkit-font-smoothing: antialiased;
 }
 
+html, .root {
+  font-size: 16px;
+  line-height: 28px;
+}
+
+body, .article {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin: auto;
+}
+h1, .h1 {
+  font-size: 1.9375em;
+  line-height: 1.80645161em;
+  margin-top: 0em;
+  margin-bottom: 1.80645162em;
+}
+h2, .h2 {
+  font-size: 1.5625em;
+  line-height: 1.12em;
+  margin-top: 1.12em;
+  margin-bottom: 1.12em;
+}
+h3, .h3 {
+  font-size: 1.25em;
+  line-height: 1.4em;
+  margin-top: 1.4em;
+  margin-bottom: 0em;
+}
+h4, .h4 {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 0em;
+}
+h5, .h5 {
+  font-size: 1em;
+  line-height: 1.75em;
+  margin-top: 1.75em;
+  margin-bottom: 0em;
+  color: #777;
+}
+p, ul, ol, pre, table, blockquote {
+  margin-top: 0em;
+  margin-bottom: 1.75em;
+}
+ul ul, ol ol, ul ol, ol ul {
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+
+/* Let's make sure all's aligned */
+hr, .hr {
+  border: 1px solid;
+  margin: -1px 0;
+}
+a, b, i, strong, em, small, code {
+  line-height: 0;
+}
+sub, sup {
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+sup {
+  top: -0.5em;
+}
+sub {
+  bottom: -0.25em;
+}
+
+/* @media (min-width: 992px) {
+  html, .root {
+    font-size: 18px;
+    line-height: 32px;
+  }
+  body, .article {
+    font-size: 1em;
+    line-height: 1.77777778em;
+    margin: auto;
+  }
+  h1, .h1 {
+    font-size: 5.33333333em;
+    line-height: 1em;
+    margin-top: 0em;
+    margin-bottom: 0.66666666em;
+  }
+  h2, .h2 {
+    font-size: 3.05555556em;
+    line-height: 1.16363636em;
+    margin-top: 0.58181818em;
+    margin-bottom: 0.58181818em;
+  }
+  h3, .h3 {
+    font-size: 1.77777778em;
+    line-height: 1em;
+    margin-top: 1em;
+    margin-bottom: 0em;
+  }
+  h4, .h4 {
+    font-size: 1em;
+    line-height: 1.77777778em;
+    margin-top: 1.77777778em;
+    margin-bottom: 0em;
+  }
+  h5, .h5 {
+    font-size: 1em;
+    line-height: 1.77777778em;
+    margin-top: 1.77777778em;
+    margin-bottom: 0em;
+    color: #777;
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: 0em;
+    margin-bottom: 1.77777778em;
+  }
+  ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  
+  hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+  }
+  a, b, i, strong, em, small, code {
+    line-height: 0;
+  }
+  sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
+}
+*/
