@@ -1,5 +1,5 @@
-/* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
-@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,800');
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css);
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,800,800,800');
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* Typography */
@@ -14,6 +14,17 @@ html, body {
   -moz-osx-font-smoothing: grayscale;
   font-family: 'Work Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
   font-weight: 500;
+  letter-spacing: -0.1px;
+  word-spacing: -0.5px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.display {
+  font-weight: 800;
 }
 
 html, .root {
@@ -24,12 +35,17 @@ body, .article {
   font-size: 18px;
   line-height: 32px;
 }
+.display {
+  font-size: 82px;
+  line-height: 96px;
+  max-width: 620px;
+}
 h1, .h1 {
   font-size: 44px;
   line-height: 64px;
   margin-top: 32px;
   margin-bottom: 64px;
-  font-weight: 800;
+  
 }
 h2, .h2 {
   font-size: 33px;
@@ -42,7 +58,7 @@ h3, .h3 {
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 16px;
-  font-weight: 800;
+  
 }
 h4, .h4 {
   font-size: 18px;
@@ -94,12 +110,16 @@ sub {
     font-size: 16px;
     line-height: 32px;
   }
+  .display {
+    font-size: 64px;
+    line-height: 72px;
+  }
   h1, .h1 {
     font-size: 32px;
     line-height: 48px; /*h1 변경사항*/
     margin-top: 32px;
     margin-bottom: 64px;
-    font-weight: 800;
+    
   }
   h2, .h2 {
     font-size: 25px;
@@ -112,7 +132,7 @@ sub {
     line-height: 32px;
     margin-top: 32px;
     margin-bottom: 16px;
-    font-weight: 800;
+    
   }
   h4, .h4 {
     font-size: 16px;
