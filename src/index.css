@@ -11,6 +11,8 @@ html, body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
+  font-weight: 500;
 }
 
 html, .root {
@@ -18,10 +20,8 @@ html, .root {
   line-height: 32px;
 }
 body, .article {
-  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
   font-size: 18px;
   line-height: 32px;
-  font-weight: 500;
 }
 h1, .h1 {
   font-size: 44px;
@@ -41,6 +41,7 @@ h3, .h3 {
   line-height: 32px;
   margin-top: 32px;
   margin-bottom: 16px;
+  font-weight: 800;
 }
 h4, .h4 {
   font-size: 18px;
@@ -81,4 +82,75 @@ sup {
 }
 sub {
   bottom: -0.25em;
+}
+
+@media (max-width: 567px) {
+  html, .root {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  body, .article {
+    font-size: 16px;
+    line-height: 32px;
+  }
+  h1, .h1 {
+    font-size: 32px;
+    line-height: 48px; /*h1 변경사항*/
+    margin-top: 32px;
+    margin-bottom: 64px;
+    font-weight: 800;
+  }
+  h2, .h2 {
+    font-size: 25px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 32px;
+  }
+  h3, .h3 {
+    font-size: 20px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 16px;
+    font-weight: 800;
+  }
+  h4, .h4 {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  h5, .h5 {
+    font-size: 16px;
+    line-height: 32px;
+    margin-top: 32px;
+    margin-bottom: 0px;
+  }
+  p, ul, ol, pre, table, blockquote {
+    margin-top: 0px;
+    margin-bottom: 32px;
+  }
+  ul ul, ol ol, ul ol, ol ul {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  
+  /* Let's make sure all's aligned */
+  hr, .hr {
+    border: 1px solid;
+    margin: -1px 0;
+  }
+  a, b, i, strong, em, small, code {
+    line-height: 0;
+  }
+  sub, sup {
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+  sup {
+    top: -0.5em;
+  }
+  sub {
+    bottom: -0.25em;
+  }
 }
