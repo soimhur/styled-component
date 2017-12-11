@@ -64,7 +64,7 @@ class TypoRender extends Component {
         </h1>
         </Container>
         <Article>
-            <h2>옵티크의 발전 과정</h2>
+            <h1>다양한 매체를 통해 글꼴에 대해 공부할 수 있었습니다.</h1>
             <p>
             이 프로젝트는 네덜란드 헤이그 왕립미술학교
             (Koninklijke Academie van Beeldende Kunsten, 
@@ -104,6 +104,19 @@ class TypoRender extends Component {
             디스플레이가 텍스트보다 풍부한 디테일을 보입니다. 
             더 거슬러 올라가 활자 시대의 글꼴은 더 좋은 예입니다.</p>
             
+        </Article>
+        <Article>
+          <h4>옵티크의 시작 계기</h4>
+          <p>글꼴을 시각적 크기에 따라 디자인하는 것은 
+            라틴 문자에서는 이미 오래된 디자인 논점 중 하나입니다. 
+            매튜 카터가 디자인한 밀러(Miller)는 
+            디스플레이가 텍스트보다 풍부한 디테일을 보입니다. 
+            더 거슬러 올라가 활자 시대의 글꼴은 더 좋은 예입니다.</p>
+          <h5>옵티크는 뭘까요</h5>
+          <p>글꼴을 시각적 크기에 따라 디자인하는 것은 
+            라틴 문자에서는 이미 오래된 디자인 논점 중 하나입니다. 
+            매튜 카터가 디자인한 밀러(Miller)는 
+            디스플레이가 텍스트보다 풍부한 디테일을 보입니다.</p>
         </Article>
         <Container>
           <h1>Because on-line search databases typically contain only abstracts, it is vital to write a complete but concise description of your work to entice potential readers into obtaining a copy of the full paper. This article describes how to write a good computer architecture abstract for both conference and journal papers. Writers should follow a checklist consisting of: motivation, problem statement, approach, results, and conclusions. Following this checklist should increase the chance of people taking the time to obtain and read your complete paper.</h1>
