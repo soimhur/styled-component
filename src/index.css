@@ -1,5 +1,6 @@
 /* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
 @import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,800');
+@import url(http://fonts.googleapis.com/earlyaccess/notosanskr.css);
 
 /* Typography */
 html, body {
@@ -11,9 +12,8 @@ html, body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
+  font-family: 'Work Sans', 'Noto Sans KR', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
   font-weight: 500;
-  color: #222;
 }
 
 html, .root {
