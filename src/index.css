@@ -1,4 +1,5 @@
 /* @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSans-kr.css); */
+@import url('https://fonts.googleapis.com/css?family=Work+Sans:400,500,600,700,800,900');
 
 /* Typography */
 html, body {
@@ -17,7 +18,7 @@ html, .root {
   line-height: 32px;
 }
 body, .article {
-  font-family: -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial,sans-serif;
+  font-family: 'Work Sans', -apple-system, BlinkMacSystemFont, Apple SD Gothic Neo, "맑은 고딕", "Malgun Gothic", "돋움", Dotum, Verdana, Arial, sans-serif;
   font-size: 18px;
   line-height: 32px;
   font-weight: 500;

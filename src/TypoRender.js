@@ -69,7 +69,7 @@ class TypoRender extends Component {
         글꼴디자이너가 부업이 없이 살아남는 것은 
         어려운 일입니다. 
         텀블벅은 이러한 고민을 해결해줄 수 있는 
-        좋은 방법입니다. 
+        좋은 방법입니다. The quick brown fox jumps over the lazy dog. 
         성공하게 되면 글꼴 디자이너는 
         글꼴 작업에 집중할 수 있게 되고, 
         구매자들은 좋은 질의 글꼴을 얻을 수 있다고 생각합니다.
@@ -109,6 +109,15 @@ class TypoRender extends Component {
             대비(contrast)와 속공간을 다르게하여 
             크기 용도에 따라 최적화 된 글꼴을 만드는 것을 
             목표 삼았습니다.</p>
+        </Article>
+        <Article>
+          <h3>The quick brown fox jumps over the lazy dog</h3>
+          <p>글꼴을 시각적 크기에 따라 디자인하는 것은 
+            라틴 문자에서는 이미 오래된 디자인 논점 중 하나입니다. 
+            매튜 카터가 디자인한 밀러(Miller)는 
+            디스플레이가 텍스트보다 풍부한 디테일을 보입니다. 
+            더 거슬러 올라가 활자 시대의 글꼴은 더 좋은 예입니다.</p>
+            
         </Article>
       </div>
     );
